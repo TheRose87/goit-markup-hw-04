@@ -172,20 +172,19 @@ body {
 }
 
 /* done */
-.bg-hero {
-}
-
-/* done */
 .hero {
-  /* background-color: var(--navyblue); */
   padding: 200px 0;
   text-align: center;
-  background-image: url(../images/hero-image-bg.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.78),
+      rgba(46, 47, 66, 0.78)
+    ),
+    url(../images/hero-image-bg.jpg);
   position: relative;
-  background-color: var(--navyblue);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 600px;
 }
 
 /* done */
@@ -394,24 +393,6 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 }
-.section-title {
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-  color: var(--navyblue-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/*.customer-title {
-  color: var(--navyblue-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .partners {
   display: flex;
@@ -443,13 +424,29 @@ body {
 .partners .customers-svg {
   width: 104px;
   height: 56px;
-  fill: var(--lightslate);
+}
+
+.partners .icon {
+  fill: currentColor;
 }
 
 /* done */
 .page-footer {
   background: var(--navyblue);
-  padding: 60px 0;
+  padding: 60px 0 60px 60px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -12px;
+  margin-left: -50px;
+  align-items: baseline;
+}
+
+.footer-address {
+  margin-top: 12px;
+  margin-left: 25px;
 }
 
 /* done */
@@ -462,29 +459,26 @@ body {
 }
 
 .footer .footer-block {
-  margin-left: 120px;
-  display: flex;
-}
-
-.footer-heading,
-.social-footer .footer-social-svg {
-  margin-left: 120px;
+  margin-top: 12px;
+  margin-left: 123px;
 }
 
 .footer-heading {
   color: var(--whitecolor);
-  display: flex;
+  /* display: flex; */
 }
+
+.social-footer {
+  display: flex;
+  padding-top: 10px;
+  gap: 16px;
+}
+
 .social-footer .link {
   flex-wrap: wrap;
   display: flex;
   gap: 16px;
   margin-top: 16px;
-}
-
-.footer-socials {
-  width: 40px;
-  height: 40px;
 }
 
 .social-footer .link {
@@ -537,9 +531,14 @@ body {
 
 /* done */
 .project-card {
-  flex-basis: calc(100% / 3-30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+.project-card:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 /* done */
